@@ -32,10 +32,6 @@ class Profile(models.Model):
 #TODO: Agregar modelos faltantes aca
 
 
-
-
-
-
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):
     if created:
